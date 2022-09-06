@@ -1,4 +1,4 @@
-package basicsyntax
+package constantsample
 
 import "testing"
 

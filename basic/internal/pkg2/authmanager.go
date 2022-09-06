@@ -1,7 +1,0 @@
-package pkg2
-
-import "fmt"
-
-func init() {
-	fmt.Println("pkg2.authmanager init here...")
-}
