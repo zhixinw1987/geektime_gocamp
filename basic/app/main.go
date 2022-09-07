@@ -12,6 +12,8 @@ func init() {
 
 func main() {
 	printStructure()
+	printCallSequence()
+	callImported()
 }
 
 func printStructure() {
@@ -43,7 +45,7 @@ func printCallSequence() {
 	`)
 }
 
-func callConstant() {
+func callImported() {
 	sample.SayHi()
 	constantsample.ExtendedEnum()
 }
