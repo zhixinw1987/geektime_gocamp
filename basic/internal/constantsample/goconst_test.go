@@ -7,6 +7,6 @@ func TestAdd(t *testing.T) {
 }
 
 func TestEnum(t *testing.T) {
-	simpleEnum()
-	extendedEnum()
+	SimpleEnum()
+	ExtendedEnum()
 }

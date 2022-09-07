@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"basic/internal/constantsample"
+	"basic/pkg/sample"
+	"fmt"
+)
 
 func init() {
 	fmt.Println("main init here...")
@@ -37,4 +41,9 @@ func printCallSequence() {
 	done initialization in pkg3, find the second deepest pacakge pkg2 and start initializaiton same as pkg3
 	likewise, then same initialization sequence in pkg1, lastly initialization in main
 	`)
+}
+
+func callConstant() {
+	sample.SayHi()
+	constantsample.ExtendedEnum()
 }

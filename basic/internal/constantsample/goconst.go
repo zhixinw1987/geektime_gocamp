@@ -66,11 +66,11 @@ func constAdd() {
 	`)
 }
 
-func simpleEnum() {
+func SimpleEnum() {
 	fmt.Println("weekday is " + strconv.Itoa(FRIDAY))
 	fmt.Println(EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST)
 }
 
-func extendedEnum() {
+func ExtendedEnum() {
 	fmt.Println(MALE)
 }
