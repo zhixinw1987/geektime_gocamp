@@ -6,13 +6,14 @@ import (
 )
 
 func TestArray(t *testing.T) {
+	fmt.Printf("Array Slice testing start...\n")
 	arr1, arr2, arr3, arr4 := InitArray()
 	fmt.Printf("arr1: %v, len(%d), cap(%d), addr(%p)\n", arr1, len(arr1), cap(arr1), &arr1)
 	fmt.Printf("arr2: %v, len(%d), cap(%d), addr(%p)\n", arr2, len(arr2), cap(arr2), &arr2)
 	fmt.Printf("arr3: %v, len(%d), cap(%d), addr(%p)\n", arr3, len(arr3), cap(arr3), &arr3)
 	fmt.Printf("arr4: %v, len(%d), cap(%d), addr(%p)\n", arr4, len(arr4), cap(arr4), &arr4)
 	CheckSize(arr3)
-	fmt.Printf("test array completed \n\n\n")
+	fmt.Printf("test array completed \n")
 }
 
 func TestSlice(t *testing.T) {
@@ -48,9 +49,13 @@ func TestSlice(t *testing.T) {
 	sl1 = append(sl1, 20)
 	sl1[3] = 110
 	fmt.Printf(`once slice expanded cap, the underlying array has been copied to a new array with extended cap
-	any change to the slice element, will no long reflect in original array, but apply to the new array with extended cap`)
+	any change to the slice element, will no long reflect in original array, but apply to the new array with extended cap\n`)
 	fmt.Printf("arr: %v, len(%d), cap(%d), addr(%p)\n", arr, len(arr), cap(arr), &arr)
 	fmt.Printf("sli1: %v, len(%d), cap(%d), addr(%p)\n", sl1, len(sl1), cap(sl1), &sl1)
 	fmt.Printf("sli2: %v, len(%d), cap(%d), addr(%p)\n", sl2, len(sl2), cap(sl2), &sl2)
 
+}
+
+func TestEnd(t *testing.T) {
+	fmt.Printf("Array slice test end ... \n\n\n")
 }
